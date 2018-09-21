@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Signika:100,200,300,400,500,600,700,800,900" />
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <link href="safecup.css" rel="stylesheet" />
+        <script src="dist/progressbar.js"></script>
+        <script src="http://www.datejs.com/build/date.js" type="text/javascript"></script>
+        <meta charset='utf-8' />
+    </head>
+
+    <body>
+        <div class="header">
+            <img class="logo" src="logo.png"/>
+            <div class="headerButtons">
+                <li id="signout-button" style="display: none;"><a>SIGN OUT</a></li>
+                <li id="authorize-button" style="display: none;"><a>AUTHORIZE</a></li>
+            </div>
+        </div>
+        <div id="info">
+            <div class="row">
+                <div class="column">
+                    <div class="center">
+                        <p class="seventeen">YOUR</p>
+                        <p class="twentythree">BAC</p>
+                        <p class="seventeen" id="bac">0.010</p>
+                    </div>
+                    <div id="bacMeter"></div>
+                </div>
+                <div class="column">
+                    <div class="center">
+                        <p class="twenty">DRINK</p>
+                        <p class="twenty">BREAKDOWN</p>
+                        <p class="seventeen" id="drinkCount">0</p>
+                    </div>
+                    <div id="chart_div"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="center">
+                    <p class="twenty" id="graphTitle">Title</p>
+                    <div id="chart_bac"></div>
+                </div>
+            </div>
+            <div class="row" id="history">
+                <div class="center">
+                    <p class="twenty" id="historyTitle">DRINKING HISTORY</p>
+                    <div id="history_data"></div>
+                </div>
+            </div>
+        </div>
+        <script src="safecup.js"></script>
+        <script async defer src="https://apis.google.com/js/api.js"
+          onload="this.onload=function(){};handleClientLoad()">
+        </script>
+    </body>
+
+</html>

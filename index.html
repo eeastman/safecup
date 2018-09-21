@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Signika:100,200,300,400,500,600,700,800,900" />
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="row">
+                <img class="logo" src="logo.png"/>
+                <nav id="nav-wrap">
+                    <ul id="nav" class="nav">
+                        <li><a class="smoothscroll" href="#home">Home</a></li>
+                        <li class="current"><a class="smoothscroll" href="#pitch">Pitch</a></li>
+                        <li class="current"><a class="smoothscroll" href="#demo">Demo</a></li>
+                        <li><a class="smoothscroll" href="#photos">Photos</a></li>
+                        <li><a class="smoothscroll" href="#graphics">Graphics</a></li>
+                        <li><a class="smoothscroll" href="#log">Progress Log</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="home">
+            <div class="section">
+                <h1>Who We Are<span>.</span></h1>
+                <hr />
+                <p>
+                Thank you for visiting our site! We (Stephanie O'Brien and Elizabeth Eastman) are the Safe Lid team and we designed a product
+                to keep you safe during a night out of drinking. Our product is a lid that can be attached to any standard solo cup.
+                With just the click of a button, the Safe Lid will calculate your BAC for you.
+                Log onto our <a href="http://web.mit.edu/eeastman/www/safelid/safecup.html">web app</a> to see your BAC at any time and view the history of your
+                drinks. To implement this we used an ultrasonic sensor, the HC-SR04. The sensor emits an
+                ultrasound that will bounce off of the liquid in the cup and be received by the echo
+                pin. This will give us the distance from our sensor to the drink which will allow us
+                to calculate the volume and thus the number of standard drinks and BAC. We used a Particle Photon
+                which has a built in wifi module to communicate with the sensor, all powered by a 9 volt battery.
+                Here's how it works for the user: pour your drink into your cup and place the lid on top.
+                Click the button that corresponds to your drink type and the Safe Lid will perform its calculations.
+                Now, enjoy your night and remember to keep a safe BAC level!
+                </p>
+            </div>
+        </section>
+        <section id="pitch">
+            <div class="section">
+                <h1>Pitch<span>.</span></h1>
+                <hr />
+                <div class="movie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nJ2gaJeBsgs" align="center" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="demo">
+            <div class="section">
+                <h1>Demo<span>.</span></h1>
+                <hr />
+                <div class="movie">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/p5u3DLFWyZc" align="center" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="photos">
+            <div class="section">
+                <h1>Photos<span>.</span></h1>
+                <hr />
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <img src="cup1v2.png" class="center" width="300" height="350">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="cup2v2.png" class="center" width="300" height="350">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="cup3v3.png" class="center" width="300" height="350">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="cup4v2.png" class="center" width="300" height="350">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="cup5v2.png" class="center" width="300" height="350">
+                </div>
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </section>
+        <section id="graphics">
+            <div class="section">
+                <h1>Graphics<span>.</span></h1>
+                <hr />
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides2 fade">
+                        <img src="rot1.png" class="center" width="300" height="350">
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <img src="rot2.png" class="center" width="300" height="350">
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <img src="rot3.png" class="center" width="300" height="350">
+                    </div>
+
+                    <div class="mySlides2 fade">
+                        <img src="rot4.png" class="center" width="300" height="350">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot2" onclick="currentSlide2(1)"></span>
+                    <span class="dot2" onclick="currentSlide2(2)"></span>
+                    <span class="dot2" onclick="currentSlide2(3)"></span>
+                    <span class="dot2" onclick="currentSlide2(4)"></span>
+                </div>
+            </div>
+        </section>
+        <section id="log">
+            <div class="section">
+                <h1>Progress Log<span>.</span></h1>
+                <hr />
+                <h3>Prior to Oct. 16</h3>
+                <p>Prior to this week, we brainstormed multiple ideas and Safe Cup was one of them.
+                Here's our initial drawing: </p>
+                <img src="idea1.png" alt="Safe Cup Drawing" style="width:200px;height:300px;">
+                <h3>Oct. 16 - 22</h3>
+                <p>During this week, we chose our final idea and presented it to the class.
+                We have since made changes to our idea (it has transformed from a cup to a lid).
+                However, at this time we had the Safe Cup. The idea is to allow users to be safe about
+                drinking by providing an effortless means of tracking alcohol comsumption via BAC.</p>
+
+                <p>Here's our HW10 from this week: For our final project, we have selected the Safe Cup.
+                  As described in our top 5 ideas, the Safe Cup will measure the number of standard drinks you
+                  have had in a given time. The idea is that the amount of liquid that constitutes a drink for wine
+                  is different than beer and other alcoholic beverages. We would use density measurements in order to
+                  calculate which type of alcoholic beverage is placed into the cup and simple volume measurements to
+                  calculate the number of standard drinks based on that beverage. There will be a reset button to reset
+                 the drink count that is displayed on the screen on the cup.</p>
+
+                 <p>The project will fulfill the requirements in the following ways. (1) We anticipate to 3D print the actual cup.
+                   (2) We plan on using sensors to calculate the number of drinks in the cup as well as a reset button for each
+                   time a person begins their night out (3) We will transmit the number of drinks into a web application.
+                   This also means that you can keep track of alcohol consumption over the course of a period of time.
+                   (4) As a user pours a drink into the cup, we will record the amount of alcohol in that pour and transmit the data.
+                   (5) Finally, we are solving a problem of inconsistencies and people being unaware of the amount of alcohol present in drinks.
+                   We are making drinking safer for people by creating an easy way for users to monitor their alcohol consumption.</p>
+
+                   <p>The final demo will consist of different types (densities) of alcohol and seeing how the cup measures
+                     the number of standard drinks that have been present in the cup. We will bring in the cup and different types of
+                     alcohol, if that is okay, to show that our cup accurately measures the number of standard drinks.</p>
+                <h3>Oct. 23 - 29</h3>
+                <p>We took this week to break off and brainstorm conceptions of our idea. We wanted to explore
+                different options for sensing and building out our prototype. In the end, we decided (for now)
+                on using a water level sensor for our cup.</p>
+                <h3>Oct. 30 - Nov. 5</h3>
+                During this week, we built our initial test prototype. We attached a water level sensor
+                to a cup and were able to successfully get readings which could be translated
+                to BAC with some user input.
+                <h3>Nov. 6 - 12</h3>
+                <p>This was the week of our midterm project presentations of our first prototype.
+                Our plan at this point was to use a water level sensor for measurements. We had prototyped using
+                an arudino uno and were able to sense the level of liquid in a cup from which we would be
+                be able to calculate volume and thus the number of standard drinks. We were still left with
+                making a final decision of the best way to measure the volume of the drink in the cup and
+                build out the actual prototype and web application.</p>
+                <h3>Nov. 13 - 19</h3>
+                <p>We started out this week deciding between using some sort of pressure sensor or the water level
+                sensor we used in our first prototype as our main means of detecting the liquid in the cup. However,
+                as we researched more, we eliminated the pressure sensor for feasability and exposed cons of using
+                the water level sensor. We would only be able to use the water level sensor by attaching it to the top
+                of the cup and thus could only sense when the user filled the cup up to a certain level because the
+                sensor's length is shorter than that of a cup. We were unsatisfied by this and decided to explore other options.
+                We decided to use an ultrasonic sensor that was reliable and would not constrain how much alcohol could be put into the cup
+                and be sensed. This meant changing from a cup to a lid as our product.</p>
+                <h3>Nov. 20 - 26</h3>
+                <p>Thanksgiving break!</p>
+                <h3>Nov. 27 - Dec. 3</h3>
+                <p>This week we made significant progress with our new idea for our prototype. We were now making the
+                Safe Lid using an ultrasonic sensor. Our first big task was to get the electronics working. In the end,
+                we were able to get accurate readings using a Particle Photon with wifi capabilities, the HC-SR04 ultrasonic sensor,
+                and simple buttons, all powered by a 9V battery (using a regulator). Once we had the electronics working and therefore knew our size constraints
+                for fitting them all in a lid, we were able to design and 3D print the lid that would house our electronics and laser cut a piece to cover it on which the buttons could lie.</p>
+                <h3>Dec. 4 - Dec. 10</h3>
+                <p>At this point, we had our electronics working with just minimal arduino code in order to test its functionality.
+                This week, it was time to build out the arudino code to calculate the number of standard drinks using the input
+                from the ultrasonic sensor as well as to build out the web application which a user can visit to view his or her
+                information (BAC and profile).</p>
+                <h3>Dec. 11 - Dec. 17</h3>
+                <p>We used this week to wrap up with our finishing touches. We made our final changes
+                to our web app, made this site to showcase our prototype and prepared for our class
+                presentation.</p>
+            </div>
+        </section>
+       <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
